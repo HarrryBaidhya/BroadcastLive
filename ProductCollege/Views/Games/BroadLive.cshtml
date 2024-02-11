@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "BroadLive";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="container">
+
+    <h1>
+        <a href="//webrtc.github.io/samples/" title="Record Video"> Broadcast</a>
+        <span>Audio/Video Recording</span>
+    </h1>
+    <p>
+        live demo <a href="http://w3c.github.io/mediacapture-record/MediaRecorder.html"
+                                                                  title="Broad casting Channel">Editor's&nbsp;Draft</a>.
+    </p>
+    <video id="gum" playsinline autoplay muted style="border: 2.5px solid rgb(15, 158, 238); height: 340px; width: 400px;"></video>
+    <video id="recorded" playsinline loop style="border: 2.5px solid rgb(15, 158, 238); height: 340px; width: 400px;"></video>
+    <div>
+        <button id="start" class="btn btn-success">Start camera</button>
+        <button id="record" disabled class="btn btn-info">Start Recording</button>
+        <button id="play" disabled class="btn btn-warning">Play</button>
+        <button id="download" disabled class="btn btn-dark">Download</button>
+        <button id="stop" class="btn btn-danger">Stop camera</button>
+    </div>
+    <div> Recording format: <select id="codecPreferences" disabled></select> </div>
+    <div>
+        <h4>Media Stream Constraints options</h4>
+        <p>Echo cancellation: <input type="checkbox" id="echoCancellation"></p>
+    </div>
+    <div><span id="errorMsg"></span></div>
+</div>
