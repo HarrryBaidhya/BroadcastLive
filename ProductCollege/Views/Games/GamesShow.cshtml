@@ -1,1 +1,41 @@
-﻿
+﻿@Model IEnumerable<ProductCollege.Models.Game>
+    @{
+        ViewData["Title"] = "Games Types";
+        Layout = "~/Views/Shared/BroadcastLayout.cshtml";
+    }
+    <!DOCTYPE html>
+
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Index</title>
+    </head>
+    <body>
+
+        <table class="table">
+            <tr>
+                <th>
+                  @*   @Html.DisplayNameFor(model => model.GameType) *@
+                </th>
+                <th>
+                 @*    @Html.DisplayNameFor(model => model.GameName) *@
+                </th>
+             
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                      @*   @Html.DisplayFor(modelItem => item.GameType) *@
+                    </td>
+                    <td>
+                       @*  @Html.DisplayFor(modelItem => item.GameName) *@
+                    </td>
+                  
+                </tr>
+            }
+
+        </table>
+    </body>
+</html>

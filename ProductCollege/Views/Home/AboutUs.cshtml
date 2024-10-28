@@ -1,0 +1,79 @@
+﻿@{
+    ViewData["Title"] = "About Us";
+    Layout = "~/Views/Shared/BroadcastLayout.cshtml";
+}
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        #bg {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+            #bg img {
+                background-size: cover;
+                background-position: left center;
+                background-repeat: no-repeat;
+                float: none;
+                height: 435px;
+                width: 100%;
+            }
+
+        .innerdiv {
+            left: 0;
+            position: absolute;
+            text-align: center;
+            top: 21px;
+            width: 100%;
+            z-index: 1;
+            color: yellow;
+            font-family: Arial;
+            font-size: 30px;
+            padding-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="bg">
+        <img src="~/image/stadium.jpg" />
+        <div class="innerdiv">
+            <h1>Fun Olympics </h1>
+            <p1>
+                <div class="card-body">
+                    The City of Payris won the bid to host the next FunOlympic Games in 2024. During the build-up to the
+                    planned games in 2024, the city invested hugely in IT infrastructure and systems to ensure that the
+                    games would be well organised, staffed, attended, and accessible to everyone on an online broadcast
+                    platform.
+                </div>
+            </p1>
+            <br />
+
+            <p2>
+                <div class="text-md-center">
+                    <b>Location: Paris</b>
+                    <br />
+                    <b>email:fun@gmail.com</b>
+                    <br />
+                    <b>Phone :981269999999</b>
+                </div>
+            </p2>
+        </div>
+    </div>
+
+
+</body>
+</html>
+
+
+
+

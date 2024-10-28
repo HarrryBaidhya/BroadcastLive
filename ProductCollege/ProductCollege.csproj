@@ -7,7 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\image\BlackHome.jpg" />
+    <Content Remove="wwwroot\image\download.png" />
+    <Content Remove="wwwroot\image\football.jpg" />
+    <Content Remove="wwwroot\image\player.png" />
+    <Content Remove="wwwroot\image\stadium.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Dapper.Microsoft.Sql" Version="0.0.5" />
+    <PackageReference Include="DNTCaptcha.Core" Version="5.2.6" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0" />
@@ -19,8 +28,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Backgrounimage\" />
     <Folder Include="wwwroot\UploadedFiles\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\image\BlackHome.jpg" />
+    <None Include="wwwroot\image\download.png" />
+    <None Include="wwwroot\image\football.jpg" />
+    <None Include="wwwroot\image\player.png" />
+    <None Include="wwwroot\image\stadium.jpg" />
   </ItemGroup>
 
 </Project>

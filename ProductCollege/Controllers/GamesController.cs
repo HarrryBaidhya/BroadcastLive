@@ -42,7 +42,7 @@ namespace ProductCollege.Controllers
         public async Task<IActionResult> SaveRecoredFile()
         {
             if (Request.Form.Files.Any())
-            {
+            { 
                 var file = Request.Form.Files["video-blob"];
                 string UploadFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "UploadedFiles");
                 string UniqueFileName = Guid.NewGuid().ToString() + "_" + file.FileName + ".webm";

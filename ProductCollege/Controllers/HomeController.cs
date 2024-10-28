@@ -28,5 +28,18 @@ namespace ProductCollege.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+        public IActionResult AboutUs()
+        {
+            return View();
+        }
+        public IActionResult Schedule()
+        {
+            return View();
+        }
+
+        public IActionResult Brocastshow()
+        {
+            return View();
+        }
     }
 }

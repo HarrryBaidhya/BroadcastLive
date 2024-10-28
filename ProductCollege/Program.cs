@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using ProductCollege;
 using ProductCollege.Areas.Identity.Data;
 using ProductCollege.ORMDapper;
+using DNTCaptcha.Core;
+
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("ProductCollegeContextConnection") ?? throw new InvalidOperationException("Connection string 'ProductCollegeContextConnection' not found.");
 
@@ -13,6 +15,12 @@ builder.Services.AddSingleton<DapperContext>();
 builder.Services.AddScoped<IserviceRepo, ServiceRepo>();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDNTCaptcha(Option =>
+{
+    Option.UseCookieStorageProvider().ShowThousandsSeparators(false);
+    Option.WithEncryptionKey("abacgdfsadh12323222");
+});
+
 
 var app = builder.Build();
 

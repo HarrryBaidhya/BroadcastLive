@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<ProductCollege.Models.Game>
 @{  
-
-    Layout = null;  
+    ViewData["Title"] = "Insert Video";
+    Layout = "~/Views/Shared/BroadcastLayout.cshtml";
 }  
 <!DOCTYPE html>  
 <html>  
@@ -9,9 +9,9 @@
     <meta name="viewport" content="width=device-width" />  
     <title>Upload Video</title>  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />  
+    <link href="~/lib/boostrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     <script src="~/scripts/jquery-3.3.1.min.js"></script>  
-    <script src="~/scripts/bootstrap.min.js"></script>  
+    <script src="~/lib/boostrap/dist/js/bootstrap.js"></script>  
     <style type="text/css">  
         .video-frame {  
             width: 100%;  

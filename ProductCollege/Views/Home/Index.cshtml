@@ -1,9 +1,45 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
+    Layout = "~/Views/Shared/BroadcastLayout.cshtml";
 }
 
 <html>
 <head>
+    <style>
+        #bg {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+            #bg img {
+                background-size: cover;
+                background-position: left center;
+                background-repeat: no-repeat;
+                float: none;
+                height: 435px;
+                width: 100%;
+            }
+
+        .innerdiv {
+            left: 0;
+            position: absolute;
+            text-align: center;
+            top: 31px;
+            width: 100%;
+            z-index: 1;
+            color:forestgreen;
+            font-family: Arial;
+            font-size: 30px;
+            padding-top: 20px;
+        }
+
+
+
+
+
+    </style>
+
     <meta charset="utf-8">
     <title>Broad Cast</title>
 </head>
@@ -12,54 +48,38 @@
     <marquee><b><i>THANKS FOR WATCHING</i></b></marquee>
 </font>
     </div>
-<body link="Blue" alink="blue" vlink="#F8F8FF">
+<body>
+    <div id="bg">
+        <img src="~/image/football.jpg" />
+        <div class="innerdiv">
+
+            <font face="Lato" size="5">
+
+                <h1 align="center">
+                    <font color="#F0B27A" size="9">
+                        WELCOME TO Channel<br />
+                    </font>
+
+                </h1>
+                @*  <video id="videoplayer" src="@Url.Content("~/Video/VID_20221023_170245.mp4")" controls="true" height="350" width="450"/> *@
+                <video id="videoplay" src="@Url.Content("~/Video/Lionel_Messi_2017_●_The_Unstoppable_Man.mp4")" controls="true" height="400" width="800" />
+
+
+                <h3 align="center">
+                    <font face="cinzel" color="red" size="3">
+                        Watch Live video and enjoy alot
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <hr width="1500px">
+            
     <br />
 
-    <font face="Lato" size="5">
-       <!--  -->
-                               
-        <!--<font face="cinzel" size="4">
-           
-        </font>-->
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+</div>
 
-    <h1 align="center">
-        <font color="#F0B27A" size="9">WELCOME TO Channel<br />
-        </font>
-           
-    </h1>
-        <video id="videoplayer" src="@Url.Content("~/Video/VID_20221023_170245.mp4")" controls="true" height="350" width="450"/>
-    <h3 align="center">
-        <font face="cinzel" color="red" size="3"> Watch Live video and enjoy alot
-             <br />
- <br />
- <br />
- <br />
- <br />
- <br />
-        <hr width="1500px">
-        <center>
-            <b>
-          <font face="cinzel" size="4">
-         <a href="#">About Us|     
-         <a href="#">Contact Us |    
-         <a href="#">Privacy Policy |    
-         <a href="#">Terms |     
-         <a href="#">Sitemap |    
-         <a href="#">Report a Bug |    
-         <a href="#">FAQ Partners</a><br />    
-         <a href="#">Stories |     
-         </a>
-            <br />
-            <br />
-            <font color="#FF0000">all@copyrights 2024</font>    
-                </font>
-            </b>
-        </center>
+ </div>
 </body>
 </html>
